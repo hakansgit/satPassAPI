@@ -1,21 +1,42 @@
 import logging
 import urllib.request
-import os
-import time
-from itertools import islice
+# import time
 import re
 import json
+from pathlib import Path
+from skyfield.api import EarthSatellite
 
-import settings
+from settings import TLE_SETTINGS, _DEBUG
 from utils import setInterval, chunker
 
 TLEs = []
+TLEs_byID = {}
 
-@setInterval(10)
-def update_TLEs():
+satellites = []
+satellites_byID = {}
+
+def prep_data():
+    global TLEs_byID
+    global satellites
+    global satellites_byID
+
+    for tle in TLEs:
+        satellite = EarthSatellite(tle['line1'], tle['line2'], tle['name'])
+        satellites.append(satellite)
+        tle['epoch'] = str(satellite.epoch.utc_iso())
+    
+    TLEs_byID = {sat['id']: sat for sat in TLEs}
+    satellites_byID = {sat.model.satnum: sat for sat in satellites}
+
+def update_TLEs(localOnly = False):
     global TLEs
 
-    url = settings.TLE_URL
+    if localOnly and Path(TLE_SETTINGS['localFile']).is_file():
+        with open(TLE_SETTINGS['localFile']) as local:
+            TLEs = json.load(local)
+            prep_data()
+        
+    url = TLE_SETTINGS['url']
     logging.info(f"Retrieving TLE information from {url}")
     req = urllib.request.Request(url, method='GET')
     retrieved_lines = []
@@ -29,15 +50,15 @@ def update_TLEs():
     # if you get an error page from ISP with a stupid 200 code
     if len(retrieved_lines) < 3 or retrieved_lines[0].startswith('<!'):
         logging.error(f'Cannot retrieve TLE file: {retrieved_lines[0]}')
-
         # if no TLEs in memory fall back to last local temp file
         if len(TLEs) < 3:
-            with open(settings.TLE_local_file) as local:
+            with open(TLE_SETTINGS['localFile']) as local:
                 TLEs = json.load(local)
+                prep_data()
         return
 
     # filter retrieved lines to TLEs array and write to local temp file
-    pattern = re.compile(settings.TLE_filter)
+    pattern = re.compile(TLE_SETTINGS['filter'])
 
     new_TLEs = []
     for group in chunker(retrieved_lines, 3):
@@ -50,9 +71,10 @@ def update_TLEs():
             }
             new_TLEs.append(sat)
     TLEs = new_TLEs
+    prep_data()
 
     # write to local file
-    with open(settings.TLE_local_file, 'w') as local:
+    with open(TLE_SETTINGS['localFile'], 'w') as local:
         json.dump(TLEs, local, ensure_ascii=False, indent=4)
     logging.info(
         f'Retrieved {len(retrieved_lines)//3} TLEs from {url}, filtered {len(TLEs)} TLEs')
@@ -62,11 +84,16 @@ def get_TLEs(sat_id):
     """ Returns TLEs for satellites identified with id:<int> in sat_id array
     Returns all TLEs if sat_id is empty """
     if len(sat_id) > 0:
-        return [tle for tle in TLEs if tle['id'] in sat_id]
+        return [TLEs_byID[int(id)] for id in sat_id if id in TLEs_byID]
     else:
         return TLEs
 
-
+@setInterval(TLE_SETTINGS['updateInterval'])
+def periodically_update_TLEs():
+    update_TLEs()
 
 # update TLE data
-# stop = update_TLEs()
+if _DEBUG:
+    update_TLEs(localOnly = True)
+else:
+    stop = periodically_update_TLEs()

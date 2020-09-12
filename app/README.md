@@ -4,7 +4,36 @@ API to query satellite passes over a location and obtain satellite TLE
 
 ## Endpoints
 
-### `Get multiple TLE`
+### `Get All TLEs`
+
+*Get TLE data for all avaialable satellites*
+
+URL : `/api/all_tles/`
+
+Method : `GET`
+
+#### **Success Response**
+
+Code : `200 OK`
+
+example:
+```json
+{
+    "tles": [
+        ...,
+        {
+            "sat_id": 25544,
+            "sat_name": "ISS (ZARYA)",
+            "line1": "1 25544U 98067A   20255.60890557  .00025955  00000-0  47833-3 0  9998",
+            "line2": "2 25544  51.6443 280.7958 0000764 115.7723  29.7792 15.48963765245413" 
+        },
+        ...
+    ]
+}
+```
+
+
+### `Get Multiple TLEs`
 
 *Get TLE data for all avaialable satellites or selected satellites*
 
@@ -12,7 +41,7 @@ URL : `/api/tles/`
 
 Method : `GET`
 
-**Data**: (optional) Limits API Response to IDs listed in the data
+**Data**: (required) Limits API Response to IDs listed in the data
 ```json
 {
     "sat_id": [...]

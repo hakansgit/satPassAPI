@@ -3,6 +3,11 @@ import threading
 def chunker(seq, size):
     return (seq[pos:pos + size] for pos in range(0, len(seq), size))
 
+cardinals = ['N', 'NNE', 'NE', 'ENE', 'E', 'ESE', 'SE',
+             'SSE', 'S', 'SSW', 'SW', 'WSW', 'W', 'WNW', 'NW', 'NNW']
+def get_cardinal(az):
+    return cardinals[round((az % 360)/22.5) % 16]
+
 def setInterval(interval):
     """ Periodically calls the specified function. 
     

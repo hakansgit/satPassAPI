@@ -10,3 +10,241 @@ INFO:root:Retrieving TLE information from http://www.celestrak.com/NORAD/element
 INFO:root:Retrieved 3008 TLEs from http://www.celestrak.com/NORAD/elements/active.txt, filtered 74 TLEs
 INFO:root:Retrieving TLE information from http://www.celestrak.com/NORAD/elements/active.txt
 INFO:root:Retrieved 3008 TLEs from http://www.celestrak.com/NORAD/elements/active.txt, filtered 74 TLEs
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 00:41:59] "[31m[1mGET /api/tles HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 00:43:52] "[31m[1mGET /api/tles HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 00:43:58] "[31m[1mGET /api/tles HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 00:51:44] "[31m[1mGET /api/tles HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 00:52:05] "[35m[1mGET /api/all_tles HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 00:54:11] "[37mGET /api/all_tles HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\tle.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 00:55:46] "[37mGET /api/all_tles HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 00:55:47] "[37mGET /api/all_tles HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 00:55:48] "[37mGET /api/all_tles HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 00:58:07] "[37mGET /api/all_tles HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 00:58:36] "[35m[1mGET /api/tles HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 00:59:18] "[35m[1mGET /api/tles HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:00:02] "[37mGET /api/tles HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:00:08] "[37mGET /api/tles/44058 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:00:18] "[37mGET /api/tles/440234 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:00:23] "[33mGET /api/tles/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:00:30] "[37mGET /api/tles HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:00:41] "[33mGET /api/tles HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:00:47] "[33mGET /api/tles HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:00:54] "[37mGET /api/tles HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:01:19] "[37mGET /api/tles HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:01:23] "[31m[1mGET /api/tles HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:01:29] "[31m[1mGET /api/tles HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:01:38] "[31m[1mGET /api/tles HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:01:46] "[31m[1mGET /api/tles HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:02:07] "[37mGET /api/tles/44057 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:02:43] "[37mGET /api/tles/44057 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:02:47] "[33mGET /api/tles/4405725 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:02:54] "[33mGET /api/tles/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:02:58] "[31m[1mGET /api/tles HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:03:05] "[31m[1mGET /api/tles HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:03:13] "[31m[1mGET /api/tles HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:03:23] "[33mGET /api/tles HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:15:28] "[33mGET /api/passes/456 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:15:43] "[37mGET /api/passes/44059 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:20:17] "[33mGET /api/passes/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:20:33] "[33mGET /api/passes/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:20:39] "[33mGET /api/passes/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:20:48] "[37mGET /api/passes/44057 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:20:52] "[33mGET /api/passes/ HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:21:11] "[33mGET /api/passes/ HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:21:25] "[33mGET /api/passes/ HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:21:31] "[33mGET /api/passes/ HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:21:47] "[31m[1mGET /api/passes HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:22:07] "[37mGET /api/passes HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:22:16] "[37mGET /api/passes HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:22:22] "[37mGET /api/passes HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:22:37] "[37mGET /api/passes HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:23:28] "[31m[1mGET /api/passes HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:26:23] "[31m[1mGET /api/passes HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 01:26:38] "[33mGET /api/passes HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 02:05:46] "[35m[1mGET /api/tles HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\tle.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 02:06:35] "[35m[1mGET /api/tles HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 02:06:44] "[31m[1mGET /api/tles HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 02:07:03] "[37mGET /api/tles/44057 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\tle.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 02:08:21] "[37mGET /api/tles/44057 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 02:08:26] "[31m[1mGET /api/tles HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 02:08:36] "[37mGET /api/tles HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\tle.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 02:08:44] "[37mGET /api/tles HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 02:08:49] "[35m[1mGET /api/tles HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\tle.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 02:09:32] "[33mGET /api/tles HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 02:09:44] "[37mGET /api/tles HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 02:09:54] "[37mGET /api/tles HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 02:10:04] "[37mGET /api/passes HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\tle.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\tle.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 11:14:27] "[37mGET /api/passes HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 11:14:35] "[37mGET /api/tles HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Sep/2020 11:14:37] "[37mGET /api/tles HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\schemas.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'c:\\Users\\hakan\\OneDrive\\Documents\\code\\satPassAPI\\app\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
