@@ -115,10 +115,13 @@ def getPasses(lat, lon, sat_id, min_el=100, st_time='',
 
             this_pass.append(observation)
 
-        passes.append({
-            'pass': this_pass,
-            'sun_lit': int(any(observation['sun_lit'] for observation in this_pass))
-        })
+        pass_sun_lit = int(any(observation['sun_lit'] for observation in this_pass))
+
+        if (not sun_lit) or pass_sun_lit:
+            passes.append({
+                'pass': this_pass,
+                'sun_lit': pass_sun_lit
+            })
 
     return passes
 

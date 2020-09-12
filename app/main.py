@@ -18,7 +18,7 @@ logging.basicConfig(filename='example.log', level=logging.DEBUG)
 
 @app.route('/')
 def docs():
-    with open('README.md') as f:
+    with open('app/README.md') as f:
         return markdown.markdown(f.read(), extensions=['fenced_code'])
 
 

@@ -8,7 +8,7 @@
   - [X] Get all TLEs
   - [X] Get multiple TLEs
   - [X] Get specific TLE
-  - [ ] Get passes for a single satellite
+  - [X] Get passes for a single satellite
 - [ ] additional features
   - [X] report TLE epoch with TLE
   - [ ] add cardinal to azimuth report
