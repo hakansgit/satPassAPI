@@ -1,0 +1,12 @@
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 110-069-753
+INFO:werkzeug: * Running on http://127.0.0.1:9000/ (Press CTRL+C to quit)
+INFO:root:Retrieving TLE information from http://www.celestrak.com/NORAD/elements/active.txt
+INFO:root:Retrieved 3008 TLEs from http://www.celestrak.com/NORAD/elements/active.txt, filtered 74 TLEs
+INFO:root:Retrieving TLE information from http://www.celestrak.com/NORAD/elements/active.txt
+INFO:root:Retrieved 3008 TLEs from http://www.celestrak.com/NORAD/elements/active.txt, filtered 74 TLEs
+INFO:root:Retrieving TLE information from http://www.celestrak.com/NORAD/elements/active.txt
+INFO:root:Retrieved 3008 TLEs from http://www.celestrak.com/NORAD/elements/active.txt, filtered 74 TLEs
+INFO:root:Retrieving TLE information from http://www.celestrak.com/NORAD/elements/active.txt
+INFO:root:Retrieved 3008 TLEs from http://www.celestrak.com/NORAD/elements/active.txt, filtered 74 TLEs

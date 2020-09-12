@@ -1,0 +1,3 @@
+- [X] Basic API description in readme
+- [ ] Create stub endpoints in flask
+- [ ]

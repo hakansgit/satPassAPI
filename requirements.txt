@@ -1,0 +1,4 @@
+Flask==1.1.2
+markdown
+flask_cors==3.0.9
+flask_expects_json==1.5.0
