@@ -9,5 +9,7 @@ TLE_SETTINGS = {
 
 PASS_SETTINGS = {
     'minElevation': 10,
-    'defaultDays': 2
+    'defaultDays': 2,
+    'maxDays': 5,
+    'maxPasses': 10
 }

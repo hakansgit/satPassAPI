@@ -28,19 +28,24 @@ passes_for_multi_sat_schema = {
             "type": "number"
         },
         "min_el": {
-            "type": "number"
+            "type": "number",
+            "default": 100
         },
         "st_time": {
-            "type": "string"
+            "type": "string",
+            "default": ""
         },
         "ed_time": {
-            "type": "string"
+            "type": "string",
+            "default": ""
         },
         "days": {
-            "type": "number"
+            "type": "number",
+            "default": 0
         },
         "sun_lit": {
-            "type": "number"
+            "type": "number",
+            "default": 0
         },
     },
     "required": ["sat_id", "lat", "lon"]

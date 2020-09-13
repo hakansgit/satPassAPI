@@ -11,7 +11,9 @@ from passes import getPasses
 # Create an object named app with CORS
 app = Flask(__name__)
 cors = CORS(app)
-app.config['CORS_HEADERS'] = 'Content-Type'
+# app.config['CORS_HEADERS'] = 'Content-Type'
+app.config['CORS_HEADERS'] = ['Content-Type', 'Authorization']
+app.config['CORS_AUTOMATIC_OPTIONS'] = True
 
 logging.basicConfig(filename='example.log', level=logging.DEBUG)
 
@@ -48,21 +50,35 @@ def singleTLE(sat_id):
     return jsonify(result)
 
 
-@app.route('/api/passes')
-@expects_json(passes_for_multi_sat_schema)
+@app.route('/api/all_passes', methods=['GET', 'POST'])
+@expects_json(passes_for_single_sat_schema, fill_defaults=True)
+def allSatPass():
+    query = g.data
+    result = getPasses(query['lat'], query['lon'], [],
+                       query['min_el'], query['st_time'], query['ed_time'],
+                       query['days'], query['sun_lit'])
+    if result == -1:
+        abort(400)
+    if len(result) < 1:
+        print('yok canim')
+        abort(404)
+    return jsonify(result)
+ 
+
+@app.route('/api/passes', methods=['GET', 'POST'])
+@expects_json(passes_for_multi_sat_schema, fill_defaults=True)
 def multiSatPass():
     query = g.data
     if len(query['sat_id']) < 1:
         abort(400, 'No satellite ID was specified')
-    target_TLEs = get_TLEs(query['sat_id'])
-    if len(target_TLEs) < 1:
-        abort(404, 'Sat ID(s) not found on server')
-    else:
-        result = {
-            'data': [sat["name"] for sat in target_TLEs]
-        }
-        return jsonify(result)
-
+    result = getPasses(query['lat'], query['lon'], query['sat_id'],
+                       query['min_el'], query['st_time'], query['ed_time'],
+                       query['days'], query['sun_lit'])
+    if result == -1:
+        abort(400)
+    if len(result) < 1:
+        abort(404)
+    return jsonify(result)
 
 @app.route('/api/passes/<int:sat_id>')
 @expects_json(passes_for_single_sat_schema, fill_defaults=True)
