@@ -30,7 +30,7 @@ def allTLEs():
     return jsonify(result)
 
 
-@app.route('/api/tles')
+@app.route('/api/tles', methods=['GET', 'POST'])
 @expects_json(multiple_TLEs_schema)
 def multiple_TLEs():
     query = g.data
@@ -80,7 +80,7 @@ def multiSatPass():
         abort(404)
     return jsonify(result)
 
-@app.route('/api/passes/<int:sat_id>')
+@app.route('/api/passes/<int:sat_id>', methods=['GET', 'POST'])
 @expects_json(passes_for_single_sat_schema, fill_defaults=True)
 def singleSatPass(sat_id):
     query = g.data
