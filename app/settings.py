@@ -1,4 +1,4 @@
-_DEBUG = True
+_DEBUG = False
 
 TLE_SETTINGS = {
     'url': 'http://www.celestrak.com/NORAD/elements/active.txt',
