@@ -104,10 +104,10 @@ def checkTLEs():
     global TLElastChecked
     now = time.time()
     if now - TLElastChecked > TLE_SETTINGS['updateInterval']:
-        update_TLEs(localOnly = not _DEBUG)
+        update_TLEs(localOnly = _DEBUG)
         TLElastChecked = time.time()
 
-update_TLEs(localOnly = not _DEBUG)
+update_TLEs(localOnly = _DEBUG)
 
 # @setInterval(TLE_SETTINGS['updateInterval'])
 # def periodically_update_TLEs():
