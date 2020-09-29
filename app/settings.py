@@ -2,7 +2,7 @@ _DEBUG = False
 
 TLE_SETTINGS = {
     'url': 'http://www.celestrak.com/NORAD/elements/active.txt',
-    'updateInterval': 5,
+    'updateInterval': 21600,
     'localFile': 'TLE.txt',
     'filter': r'^ONEWEB'
 }

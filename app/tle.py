@@ -1,3 +1,4 @@
+import time
 import logging
 import urllib.request
 # import time
@@ -7,7 +8,8 @@ from pathlib import Path
 from skyfield.api import EarthSatellite
 
 from settings import TLE_SETTINGS, _DEBUG
-from utils import setInterval, chunker
+# from utils import setInterval
+from utils import chunker
 
 TLEs = []
 TLEs_byID = {}
@@ -16,9 +18,13 @@ satellites = []
 satellites_byID = {}
 
 def prep_data():
+    global TLEs
     global TLEs_byID
     global satellites
     global satellites_byID
+
+    # print('prepping data')
+    # print(len(TLEs))
 
     for tle in TLEs:
         satellite = EarthSatellite(tle['line1'], tle['line2'], tle['name'])
@@ -31,13 +37,18 @@ def prep_data():
 def update_TLEs(localOnly = False):
     global TLEs
 
+    # print('updating TLEs')
+
     if localOnly and Path(TLE_SETTINGS['localFile']).is_file():
         with open(TLE_SETTINGS['localFile']) as local:
             TLEs = json.load(local)
             prep_data()
+            return
         
     url = TLE_SETTINGS['url']
     logging.info(f"Retrieving TLE information from {url}")
+    # print('downloading TLEs')
+
     req = urllib.request.Request(url, method='GET')
     retrieved_lines = []
     with urllib.request.urlopen(req) as f:
@@ -88,12 +99,22 @@ def get_TLEs(sat_id):
     else:
         return TLEs
 
-@setInterval(TLE_SETTINGS['updateInterval'])
-def periodically_update_TLEs():
-    update_TLEs()
+TLElastChecked = time.time()
+def checkTLEs():
+    global TLElastChecked
+    now = time.time()
+    if now - TLElastChecked > TLE_SETTINGS['updateInterval']:
+        update_TLEs(localOnly = not _DEBUG)
+        TLElastChecked = time.time()
 
-# update TLE data
-if _DEBUG:
-    update_TLEs(localOnly = True)
-else:
-    stop = periodically_update_TLEs()
+update_TLEs(localOnly = not _DEBUG)
+
+# @setInterval(TLE_SETTINGS['updateInterval'])
+# def periodically_update_TLEs():
+#     update_TLEs()
+
+# # update TLE data
+# if _DEBUG:
+#     update_TLEs(localOnly = True)
+# else:
+#     stop = periodically_update_TLEs()

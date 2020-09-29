@@ -5,7 +5,7 @@ import dateutil.parser
 
 import json
 
-from utils import get_cardinal
+# from utils import get_cardinal
 from tle import satellites_byID
 from settings import PASS_SETTINGS
 
@@ -187,9 +187,9 @@ def getSatelliteLatLong(sat_id, t0=None):
         })
     return result
 
-# getPasses(1, 1, [], 5, '2020-09-11T22:42:30Z', '2020-09-12T20:29:29Z')
+# print(getPasses(1, 1, [], 5, '2020-09-11T22:42:30Z', '2020-09-12T20:29:29Z'))
 
-# getPasses(1, 1, [44058, 44059, 44060], 25, "2020-09-12T22:10:01Z", "2020-09-14T21:30:08Z", sun_lit=0)
+# print(getPasses(1, 1, [44058, 44059, 44060], 25, "2020-09-12T22:10:01Z", "2020-09-14T21:30:08Z", sun_lit=0))
 
 # {
 #     "lat":1,
