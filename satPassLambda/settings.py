@@ -1,11 +1,10 @@
 _DEBUG = False
 
-
 TLE_SETTINGS = {
-    'url': 'http://www.celestrak.com/NORAD/elements/active.txt',
-    'updateInterval': 21600,
-    'localFile': 'TLE.txt',
-    'filter': r'^ONEWEB'
+    'url': 'https://d36lqwokkfmnxt.cloudfront.net/OWSats.txt',
+    # 'updateInterval': 21600,
+    # 'localFile': './tmp/TLE.txt',
+    # 'filter': r'^ONEWEB'
 }
 
 PASS_SETTINGS = {

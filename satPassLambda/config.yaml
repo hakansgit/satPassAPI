@@ -1,7 +1,7 @@
 region: us-east-1
 
 function_name: my_lambda_function
-handler: service.handler
+handler: lambda_function.lambda_handler
 description: My first lambda function
 runtime: python3.8
 # role: lambda_basic_execution
@@ -13,8 +13,8 @@ runtime: python3.8
 
 # if access key and secret are left blank, boto will use the credentials
 # defined in the [default] section of ~/.aws/credentials.
-aws_access_key_id:
-aws_secret_access_key:
+# aws_access_key_id:
+# aws_secret_access_key:
 
 # dist_directory: dist
 # timeout: 15

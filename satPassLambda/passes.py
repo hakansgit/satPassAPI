@@ -3,8 +3,6 @@ from numpy import insert, append
 from datetime import timedelta
 import dateutil.parser
 
-import json
-
 # from utils import get_cardinal
 from tle import satellites_byID
 from settings import PASS_SETTINGS
